@@ -1,6 +1,6 @@
 [package]
 name = "decaf-mod"
-version = "1.0.0-alpha.1"
+version = "1.0.0-alpha.2"
 edition = "2024"
 rust-version = "1.85"
 authors = ["Niko Matsakis <niko@alum.mit.edu>"]
