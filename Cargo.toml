@@ -2,8 +2,11 @@
 name = "decaf"
 version = "1.0.0-alpha.1"
 edition = "2024"
+rust-version = "1.85"
+authors = ["Niko Matsakis <niko@alum.mit.edu>"]
 description = "Debouncing proxy for ACP - coalesces agent message chunks"
 license = "MIT OR Apache-2.0"
+readme = "README.md"
 repository = "https://github.com/symposium-dev/decaf"
 keywords = ["acp", "agent", "proxy", "debounce"]
 categories = ["development-tools"]
@@ -20,4 +23,5 @@ sacp-conductor = "11.0.0-alpha.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 
 [package.metadata.symposium]
+binary = "decaf"
 args = ["100"]
