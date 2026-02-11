@@ -1,4 +1,4 @@
-use decaf::Decaf;
+use decaf_mod::Decaf;
 use sacp::ConnectTo;
 use std::time::Duration;
 use tokio_util::compat::{TokioAsyncReadCompatExt, TokioAsyncWriteCompatExt};

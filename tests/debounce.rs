@@ -8,7 +8,7 @@
 use std::path::PathBuf;
 use std::time::Duration;
 
-use decaf::Decaf;
+use decaf_mod::Decaf;
 use futures::{SinkExt, StreamExt, channel::mpsc};
 use sacp::schema::{
     AgentCapabilities, ContentBlock, ContentChunk, InitializeRequest, InitializeResponse,

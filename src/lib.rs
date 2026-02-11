@@ -7,7 +7,7 @@
 //! # Usage
 //!
 //! ```no_run
-//! # use decaf::Decaf;
+//! # use decaf_mod::Decaf;
 //! # use sacp::{Proxy, ConnectTo};
 //! # use std::time::Duration;
 //! # async fn example(transport: impl ConnectTo<Proxy> + 'static) -> Result<(), sacp::Error> {

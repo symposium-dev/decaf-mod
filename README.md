@@ -5,7 +5,7 @@ Debouncing proxy for ACP. Agents often send `AgentMessageChunk` notifications wo
 ## As a library
 
 ```rust
-use decaf::Decaf;
+use decaf_mod::Decaf;
 use std::time::Duration;
 
 // In a proxy chain
@@ -23,7 +23,7 @@ Decaf::new(Duration::from_millis(100))
 ## As a binary
 
 ```
-decaf [interval_ms]
+decaf-mod [interval_ms]
 ```
 
 Runs as an ACP proxy over stdin/stdout. The optional argument sets the debounce interval in milliseconds (default: 100).

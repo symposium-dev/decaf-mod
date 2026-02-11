@@ -1,4 +1,4 @@
-# Decaf
+# Decaf Mod
 
 Debouncing proxy for ACP. Agents often send `AgentMessageChunk` notifications word-by-word; Decaf coalesces these into fewer, larger chunks sent at a configurable interval.
 
@@ -26,13 +26,13 @@ Per-session state is held in `Arc<Mutex<HashMap<SessionId, BufferedSession>>>`. 
 The binary speaks SACP JSON-RPC over stdin/stdout via `ByteStreams` with `tokio_util::compat`. It takes one optional positional argument: the debounce interval in milliseconds (default 100).
 
 ```
-decaf [interval_ms]
+decaf-mod [interval_ms]
 ```
 
 ## Library usage
 
 ```rust
-use decaf::Decaf;
+use decaf_mod::Decaf;
 use std::time::Duration;
 
 // In a proxy chain

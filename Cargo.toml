@@ -1,5 +1,5 @@
 [package]
-name = "decaf"
+name = "decaf-mod"
 version = "1.0.0-alpha.1"
 edition = "2024"
 rust-version = "1.85"
@@ -23,5 +23,5 @@ sacp-conductor = "11.0.0-alpha.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 
 [package.metadata.symposium]
-binary = "decaf"
+binary = "decaf-mod"
 args = ["100"]
