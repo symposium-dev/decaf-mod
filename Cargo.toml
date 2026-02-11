@@ -10,12 +10,14 @@ categories = ["development-tools"]
 
 [dependencies]
 sacp = "11.0.0-alpha.1"
-tokio = { version = "1.48", features = ["time", "sync"] }
+tokio = { version = "1.48", features = ["time", "sync", "io-util", "io-std", "macros", "rt-multi-thread"] }
+tokio-util = { version = "0.7", features = ["compat"] }
 tracing = "0.1"
 
 [dev-dependencies]
 futures = "0.3"
 sacp-conductor = "11.0.0-alpha.1"
-tokio = { version = "1.48", features = ["macros", "rt-multi-thread", "time", "io-util"] }
-tokio-util = { version = "0.7", features = ["compat"] }
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[package.metadata.symposium]
+args = ["100"]
